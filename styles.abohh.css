@@ -1,0 +1,48 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow: auto;
+}
+
+/* Background image styling */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(mubiiii.jpg.jpg); /* <<-- Replace this with your image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+/* Content styling */
+.content {
+  padding: 60px 30px;
+  color: white;
+  text-align: center;
+}
+
+.text-section {
+  margin: 80px auto;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+

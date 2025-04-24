@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color:  #3498db;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .sub-header {
+            background-color: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .contact-form {
+            background: #ffffff;
+            width: 70%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h1 {
+            color: #3498db;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .contact-header p {
+            color: #777;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #f4f4f4;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 0;
+            color: #333;
+        }
+
+        .contact-info strong {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Header Section -->
+    <div class="header">
+        <h1>Welcome to Twister Entertainment's Contact Page</h1>
+    </div>
+
+    <!-- Sub Header Section -->
+    <div class="sub-header">
+        <h2>We'd Love to Hear From You!</h2>
+        <p>Feel free to send us your questions or feedback below. We'll get back to you as soon as we can!</p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="contact-header">
+            <h1>Contact Twister Entertainment</h1>
+            <p>Got a question or feedback? Drop a message and we'll get back to you soon!</p>
+        </div>
+
+        <form action="mailto:twisterbadman00@gmail.com" method="POST" enctype="multipart/form-data">
+            <div class="form-container">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                
+                <label for="comment">Your Message:</label>
+                <textarea id="comment" name="comment" rows="5" required placeholder="Enter your message"></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+        </form>
+
+        <div class="contact-info">
+            <p>If you need immediate assistance, please call us at:</p>
+            <p><strong>Contact Number: +250733293031</strong></p>
+        </div>
+    </section>
+
+</body>
+</html>

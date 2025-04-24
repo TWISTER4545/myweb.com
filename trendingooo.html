@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Sections with Background</title>
+  <style>
+    /* Full-page background image */
+    body {
+      background-image: url('your-background-image.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed; /* Keeps the background fixed while scrolling */
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .video-section {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      width: calc(33% - 40px); /* 3 sections per row */
+      box-sizing: border-box;
+      color: white;
+    }
+
+    .video-section h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .video-section input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Responsiveness for smaller screens */
+    @media (max-width: 768px) {
+      .video-section {
+        width: calc(50% - 40px); /* 2 sections per row on medium screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .video-section {
+        width: 100%; /* 1 section per row on small screens */
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>OUR TRENDING VIDEOS</h1>
+  <P> These are our videos that are on trend this week!</P>
+  <div class="container">
+    <!-- Video Section 1 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN E01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN E01">
+    </div>
+
+    <!-- Video Section 2 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN EP S01E02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN S01E02">
+    </div>
+
+    <!-- Video Section 3 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN E03.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN S01E03">
+    </div>
+
+    <!-- Video Section 4 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN E04.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN S01E04">
+    </div>
+
+    <!-- Video Section 5 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN E05.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN S01E05">
+    </div>
+
+    <!-- Video Section 6 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN E06.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN S01E06">
+    </div>
+
+    <!-- Video Section 7 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN E07.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN S01E07">
+    </div>
+
+    <!-- Video Section 8 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="PARIS HAS FALLEN E08_final.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="PARIS HAS FALLEN S01E08 FINAL">
+    </div>
+
+    <!-- Video Section 9 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="THE DAY OF JACKAL EP1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="THE DAY OF JACKAL EP1">
+    </div>
+
+    <!-- Video Section 10 -->
+    <div class="video-section">
+      <video width="100%" controls>
+        <source src="THE DAY OF JACKAL EP2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <input type="text" placeholder="THE DAY OF JACKAL EP2">
+    </div>
+   
+      <!-- Video Section 2 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE DAY OF JACKAL EP3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE DAY OF JACKAL EP3">
+      </div>
+  
+      <!-- Video Section 3 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE DAY OF JACKAL EP4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE DAY OF JACKAL EP4">
+      </div>
+  
+      <!-- Video Section 4 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE DAY OF JACKAL EP5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE DAY OF JACKAL EP5">
+      </div>
+  
+      <!-- Video Section 5 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE DAY OF JACKAL EP6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE DAY OF JACKAL EP6">
+      </div>
+  
+      <!-- Video Section 6 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE DAY OF JACKAL EP7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE DAY OF JACKAL EP7">
+      </div>
+  
+      <!-- Video Section 7 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE DAY OF JACKAL EP8.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE DAY OF JACKAL EP8">
+      </div>
+  
+      <!-- Video Section 8 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE_DAY_OF_THE_JACKAL_EP9.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE DAY OF JACKAL EP9">
+      </div>
+  
+      <!-- Video Section 9 -->
+      <div class="video-section">
+        <video width="100%" controls>
+          <source src="THE_DAY_OF_THE_JACKAL_EP10FINAL.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <input type="text" placeholder="THE_DAY_OF_THE_JACKAL_EP10FINAL">
+      </div>
+  
+  </div>
+</body>
+</html>

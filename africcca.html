@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Sections with Input</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('your-background.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .image-section {
+      background: rgba(255, 255, 255, 0.85); /* Light background with transparency */
+      border-radius: 10px;
+      padding: 15px;
+      width: calc(30% - 30px); /* 3 per row on desktop */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+    }
+
+    .image-section img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .image-section input {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 900px) {
+      .image-section {
+        width: calc(45% - 30px); /* 2 per row on tablets */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .image-section {
+        width: 100%; /* 1 per row on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Repeat for 10 images -->
+    <div class="image-section">
+      <img src="pic/bruce.jpg" alt="Image 1">
+      <h1>Bruce melody & joeboy made the best rwandan international male collable of the year in Rwanda</h1>
+    </div>
+
+    <div class="image-section">
+      <img src="pic/eleeh.jpg" alt="Image 2">
+      <h1>Element eleeh might win gramy awards due to his overwheelming talent</h1>
+    </div>
+
+    <div class="image-section">
+      <img src="pic/gloria.jpg" alt="Image 3">
+      <h1>She wonders why other industry women hates her especially nyashless ones</h1>
+    </div>
+    <div class="image-section">
+      <img src="sheebah.jpg" alt="Image 1">
+      <h1>Benshi bahamya ko umuziki wa uganda wasubiye inyuma kubera kubyara kwa sheebah kalungi"<h1>
+    </div>
+
+    <div class="image-section">
+      <img src="davido.jpg" alt="Image 2">
+    <h1>Davido arahamya neza ko urumogi atari ikinyabutabire cyakwita ikiyobyabwenge </h1>
+    </div>
+
+    <div class="image-section">
+      <img src="tiwasavage.jpg" alt="Image 3">
+      <h1>Tiwa savage avuga ko imyaka afite ntacyo yamubangamira kubijyanye n'imyambarire bityo abantu bareka kumwibasira kuko adakuze cyane nkaba rihanna kandi nabo bambara uko bashatse</h1>
+    </div>
+
+  </div>
+</body>
+</html>
